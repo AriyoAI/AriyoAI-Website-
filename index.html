@@ -2,12 +2,14 @@
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
   <title>AriyoAI | رشد کسب‌وکار با هوش مصنوعی</title>
 
   <meta name="description"
-        content="AriyoAI؛ خدمات تولید محتوا، استراتژی اینستاگرام، هویت برند و مشاوره رشد کسب‌وکار با هوش مصنوعی.">
+        content="AriyoAI؛ تولید محتوا، استراتژی اینستاگرام، طراحی هویت برند و مشاوره رشد کسب‌وکار با هوش مصنوعی.">
 
   <style>
 
@@ -22,10 +24,14 @@
     }
 
     body {
-      font-family: Tahoma, Arial, sans-serif;
-      background: #050d18;
+      font-family:
+        Tahoma,
+        Arial,
+        sans-serif;
+      background: #050b14;
       color: #ffffff;
-      line-height: 1.8;
+      line-height: 1.9;
+      overflow-x: hidden;
     }
 
     a {
@@ -34,26 +40,25 @@
     }
 
     .container {
-      width: 90%;
-      max-width: 1150px;
+      width: min(1120px, 92%);
       margin: auto;
     }
 
     /* =========================
        HEADER
-    ========================== */
+    ========================= */
 
     header {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(5, 13, 24, 0.92);
+      background: rgba(5, 11, 20, 0.94);
+      border-bottom: 1px solid #1b2b43;
       backdrop-filter: blur(12px);
-      border-bottom: 1px solid #172940;
     }
 
-    .navbar {
-      min-height: 75px;
+    .nav {
+      min-height: 78px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -61,8 +66,8 @@
     }
 
     .logo {
-      font-size: 25px;
-      font-weight: bold;
+      font-size: 28px;
+      font-weight: 900;
       color: #ffffff;
     }
 
@@ -70,71 +75,75 @@
       color: #9be52b;
     }
 
-    nav {
+    .nav-links {
       display: flex;
-      gap: 28px;
       align-items: center;
+      gap: 28px;
+      list-style: none;
     }
 
-    nav a {
-      color: #c8d1e2;
+    .nav-links a {
+      color: #c9d2e4;
       font-size: 15px;
       transition: 0.3s;
     }
 
-    nav a:hover {
+    .nav-links a:hover {
       color: #9be52b;
     }
 
-    .nav-button {
+    .nav-btn {
       background: #9be52b;
-      color: #07101c;
+      color: #07101d !important;
       padding: 10px 18px;
       border-radius: 12px;
-      font-weight: bold;
-    }
-
-    .nav-button:hover {
-      color: #07101c;
-      transform: translateY(-2px);
+      font-weight: 800;
     }
 
     /* =========================
        HERO
-    ========================== */
+    ========================= */
 
     .hero {
-      min-height: 650px;
+      min-height: 720px;
       display: flex;
       align-items: center;
-      text-align: center;
+      position: relative;
+      overflow: hidden;
       background:
-        radial-gradient(circle at top right, #12345b 0%, transparent 35%),
-        radial-gradient(circle at bottom left, #102a20 0%, transparent 30%),
-        #050d18;
-      padding: 100px 0;
+        radial-gradient(
+          circle at 75% 30%,
+          rgba(155, 229, 43, 0.13),
+          transparent 32%
+        ),
+        linear-gradient(
+          135deg,
+          #050b14,
+          #081426
+        );
     }
 
     .hero-content {
-      max-width: 850px;
-      margin: auto;
+      max-width: 780px;
+      padding: 90px 0;
     }
 
-    .hero-badge {
+    .badge {
       display: inline-block;
-      padding: 8px 18px;
-      border: 1px solid #294564;
-      background: #0b1b31;
-      border-radius: 50px;
+      padding: 8px 16px;
+      border: 1px solid #304966;
+      border-radius: 30px;
       color: #9be52b;
+      background: rgba(155, 229, 43, 0.05);
       margin-bottom: 25px;
       font-size: 14px;
     }
 
     .hero h1 {
-      font-size: clamp(38px, 7vw, 72px);
-      line-height: 1.25;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.2;
       margin-bottom: 25px;
+      font-weight: 900;
     }
 
     .hero h1 span {
@@ -142,45 +151,49 @@
     }
 
     .hero p {
-      color: #b8c1d9;
-      font-size: 19px;
       max-width: 700px;
-      margin: 0 auto 35px;
+      color: #b8c1d9;
+      font-size: 20px;
+      margin-bottom: 35px;
     }
 
     .hero-buttons {
       display: flex;
-      justify-content: center;
-      gap: 15px;
       flex-wrap: wrap;
+      gap: 15px;
     }
 
     .btn {
       display: inline-block;
-      padding: 14px 27px;
+      padding: 14px 25px;
       border-radius: 14px;
-      font-weight: bold;
+      font-weight: 800;
       transition: 0.3s;
     }
 
     .btn-primary {
       background: #9be52b;
-      color: #07101c;
+      color: #07101d;
     }
 
-    .btn-secondary {
-      border: 1px solid #36506f;
-      color: #ffffff;
-      background: #0b1b31;
-    }
-
-    .btn:hover {
+    .btn-primary:hover {
       transform: translateY(-3px);
     }
 
+    .btn-secondary {
+      border: 1px solid #344d6c;
+      color: #ffffff;
+      background: #0c1a2d;
+    }
+
+    .btn-secondary:hover {
+      border-color: #9be52b;
+      color: #9be52b;
+    }
+
     /* =========================
-       SECTION
-    ========================== */
+       GENERAL SECTIONS
+    ========================= */
 
     section {
       padding: 90px 0;
@@ -188,7 +201,7 @@
 
     .section-title {
       text-align: center;
-      font-size: 35px;
+      font-size: 38px;
       margin-bottom: 15px;
     }
 
@@ -196,17 +209,17 @@
       color: #9be52b;
     }
 
-    .section-description {
+    .section-subtitle {
       text-align: center;
-      color: #b8c1d9;
+      color: #aeb9ce;
       font-size: 17px;
-      max-width: 700px;
+      max-width: 720px;
       margin: 0 auto 50px;
     }
 
     /* =========================
        SERVICES
-    ========================== */
+    ========================= */
 
     #services {
       background: #081426;
@@ -214,7 +227,8 @@
 
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
       gap: 22px;
     }
 
@@ -230,7 +244,8 @@
     .service-card:hover {
       transform: translateY(-8px);
       border-color: #9be52b;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+      box-shadow:
+        0 15px 40px rgba(0,0,0,0.25);
     }
 
     .service-icon {
@@ -249,189 +264,282 @@
     }
 
     /* =========================
-       ABOUT
-    ========================== */
+       WHY ARIYOAI
+    ========================= */
 
-    .about {
-      background: #050d18;
+    .why {
+      background: #050b14;
     }
 
-    .about-box {
-      background: linear-gradient(135deg, #0c1d33, #081525);
-      border: 1px solid #243d5c;
-      border-radius: 25px;
-      padding: 45px;
-      text-align: center;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .about-box p {
-      color: #c0c9d9;
-      font-size: 17px;
-      margin-top: 18px;
-    }
-
-    .about-highlight {
-      color: #9be52b;
-      font-weight: bold;
-    }
-
-    /* =========================
-       PROCESS
-    ========================== */
-
-    #process {
-      background: #081426;
-    }
-
-    .process-grid {
+    .why-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
       gap: 20px;
     }
 
-    .process-card {
-      text-align: center;
-      padding: 30px 20px;
-      background: #0d1d35;
-      border-radius: 20px;
-      border: 1px solid #263e60;
+    .why-card {
+      background: #091527;
+      border: 1px solid #1e334f;
+      border-radius: 18px;
+      padding: 28px;
     }
 
-    .process-number {
-      width: 55px;
-      height: 55px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 15px;
-      background: #9be52b;
-      color: #07101c;
-      border-radius: 50%;
-      font-weight: bold;
-      font-size: 20px;
+    .why-card strong {
+      display: block;
+      color: #9be52b;
+      font-size: 25px;
+      margin-bottom: 8px;
     }
 
-    .process-card p {
+    .why-card p {
       color: #b8c1d9;
-      font-size: 14px;
-      margin-top: 8px;
+    }
+
+    /* =========================
+       PORTFOLIO
+    ========================= */
+
+    #portfolio {
+      background: #081426;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+      gap: 22px;
+    }
+
+    .portfolio-card {
+      min-height: 230px;
+      padding: 30px;
+      border-radius: 22px;
+      border: 1px solid #263e60;
+      background:
+        linear-gradient(
+          145deg,
+          #10243e,
+          #09172a
+        );
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .portfolio-card::before {
+      content: "";
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: rgba(155,229,43,0.08);
+      top: -50px;
+      left: -50px;
+    }
+
+    .portfolio-card h3 {
+      font-size: 22px;
+      margin-bottom: 8px;
+      position: relative;
+    }
+
+    .portfolio-card p {
+      color: #b8c1d9;
+      position: relative;
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    #about {
+      background: #050b14;
+    }
+
+    .about-box {
+      background:
+        linear-gradient(
+          135deg,
+          #0b1c31,
+          #081426
+        );
+      border: 1px solid #263e60;
+      border-radius: 25px;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .about-logo {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .about-box h2 {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+
+    .about-box h2 span {
+      color: #9be52b;
+    }
+
+    .about-box p {
+      color: #b8c1d9;
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
     }
 
     /* =========================
        CTA
-    ========================== */
+    ========================= */
 
     .cta {
-      padding: 100px 0;
-      text-align: center;
+      padding: 80px 0;
       background:
-        radial-gradient(circle, #12345b 0%, #050d18 65%);
-    }
-
-    .cta-box {
-      max-width: 850px;
-      margin: auto;
+        linear-gradient(
+          135deg,
+          #9be52b,
+          #6db31c
+        );
+      color: #06101b;
+      text-align: center;
     }
 
     .cta h2 {
-      font-size: clamp(30px, 5vw, 48px);
-      margin-bottom: 20px;
+      font-size: 38px;
+      margin-bottom: 15px;
     }
 
     .cta p {
-      color: #b8c1d9;
+      max-width: 700px;
+      margin: 0 auto 28px;
       font-size: 18px;
-      margin-bottom: 30px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: #06101b;
+      color: #ffffff;
+      padding: 14px 28px;
+      border-radius: 13px;
+      font-weight: 800;
     }
 
     /* =========================
        FOOTER
-    ========================== */
+    ========================= */
 
     footer {
       background: #030811;
-      border-top: 1px solid #172940;
-      padding: 40px 0;
-      text-align: center;
+      padding: 55px 0 25px;
+      border-top: 1px solid #1b2b43;
     }
 
-    .footer-logo {
-      font-size: 25px;
-      font-weight: bold;
+    .footer-grid {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+      gap: 35px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand h3 {
+      font-size: 28px;
       margin-bottom: 10px;
     }
 
-    .footer-logo span {
+    .footer-brand h3 span {
       color: #9be52b;
     }
 
-    footer p {
-      color: #7f8ba2;
+    footer p,
+    footer li {
+      color: #8f9bb1;
       font-size: 14px;
     }
 
-    .social {
-      margin: 18px 0;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
+    footer ul {
+      list-style: none;
     }
 
-    .social a {
-      padding: 8px 15px;
-      border: 1px solid #263e60;
-      border-radius: 10px;
-      color: #b8c1d9;
-      transition: 0.3s;
+    footer li {
+      margin-bottom: 8px;
     }
 
-    .social a:hover {
-      border-color: #9be52b;
+    footer a:hover {
       color: #9be52b;
+    }
+
+    .copyright {
+      border-top: 1px solid #17253a;
+      padding-top: 20px;
+      text-align: center;
+      color: #6f7b90;
+      font-size: 13px;
     }
 
     /* =========================
        MOBILE
-    ========================== */
+    ========================= */
 
     @media (max-width: 700px) {
 
-      nav {
+      .nav {
+        min-height: 68px;
+      }
+
+      .logo {
+        font-size: 23px;
+      }
+
+      .nav-links {
         display: none;
       }
 
-      .navbar {
-        justify-content: center;
+      .hero {
+        min-height: 650px;
       }
 
-      .hero {
-        min-height: 600px;
-        padding: 80px 0;
+      .hero-content {
+        padding: 70px 0;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 42px;
       }
 
       .hero p {
-        font-size: 16px;
+        font-size: 17px;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      section {
+        padding: 70px 0;
       }
 
       .section-title {
-        font-size: 29px;
+        font-size: 30px;
       }
 
       .about-box {
         padding: 30px 20px;
       }
 
-      .service-card {
-        padding: 28px 20px;
+      .about-box h2 {
+        font-size: 29px;
       }
 
-      .btn {
-        width: 100%;
-        max-width: 300px;
+      .cta h2 {
+        font-size: 30px;
       }
-
     }
 
   </style>
@@ -439,376 +547,500 @@
 
 <body>
 
-  <!-- =========================
-       HEADER
-  ========================== -->
+  <!-- HEADER -->
 
   <header>
-
-    <div class="container navbar">
+    <div class="container nav">
 
       <a href="#home" class="logo">
         🌱 Ariyo<span>AI</span>
       </a>
 
-      <nav>
-        <a href="#home">خانه</a>
-        <a href="#services">خدمات</a>
-        <a href="#about">درباره ما</a>
-        <a href="#process">مسیر همکاری</a>
-        <a href="#contact" class="nav-button">شروع همکاری</a>
-      </nav>
+      <ul class="nav-links">
+
+        <li>
+          <a href="#home">خانه</a>
+        </li>
+
+        <li>
+          <a href="#services">خدمات</a>
+        </li>
+
+        <li>
+          <a href="#portfolio">نمونه‌کارها</a>
+        </li>
+
+        <li>
+          <a href="#about">درباره ما</a>
+        </li>
+
+        <li>
+          <a href="#contact" class="nav-btn">
+            شروع همکاری
+          </a>
+        </li>
+
+      </ul>
 
     </div>
-
   </header>
 
 
-  <!-- =========================
-       HERO
-  ========================== -->
+  <!-- HERO -->
 
-  <section class="hero" id="home">
+  <main id="home">
 
-    <div class="container">
+    <section class="hero">
 
-      <div class="hero-content">
+      <div class="container">
 
-        <div class="hero-badge">
-          🤖 آینده کسب‌وکار با هوش مصنوعی
+        <div class="hero-content">
+
+          <div class="badge">
+            🚀 آینده کسب‌وکار با هوش مصنوعی
+          </div>
+
+          <h1>
+            ایده‌ها را به
+            <span>رشد واقعی</span>
+            تبدیل می‌کنیم.
+          </h1>
+
+          <p>
+            AriyoAI به کسب‌وکارها کمک می‌کند
+            با استفاده هوشمندانه از هوش مصنوعی،
+            محتوای حرفه‌ای بسازند، برند قدرتمندتری
+            ایجاد کنند و سریع‌تر رشد کنند.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#services"
+               class="btn btn-primary">
+              مشاهده خدمات 🚀
+            </a>
+
+            <a href="#contact"
+               class="btn btn-secondary">
+              مشاوره اولیه
+            </a>
+
+          </div>
+
         </div>
 
-        <h1>
-          ایده‌های شما را
-          <span>هوشمندتر</span>
-          می‌کنیم
-        </h1>
+      </div>
 
-        <p>
-          در AriyoAI با استفاده از هوش مصنوعی،
-          ایده‌های کسب‌وکار را به محتوای حرفه‌ای،
-          برند قدرتمند و مسیر رشد واقعی تبدیل می‌کنیم.
+    </section>
+
+
+    <!-- SERVICES -->
+
+    <section id="services">
+
+      <div class="container">
+
+        <h2 class="section-title">
+          خدمات <span>AriyoAI</span> 🚀
+        </h2>
+
+        <p class="section-subtitle">
+          با هوش مصنوعی، ایده‌های کسب‌وکار شما
+          را به محتوای حرفه‌ای و نتیجه‌محور
+          تبدیل می‌کنیم.
         </p>
 
-        <div class="hero-buttons">
+        <div class="services-grid">
 
-          <a href="#services" class="btn btn-primary">
-            مشاهده خدمات 🚀
-          </a>
+          <div class="service-card">
 
-          <a href="#contact" class="btn btn-secondary">
-            شروع همکاری
-          </a>
+            <div class="service-icon">
+              🤖
+            </div>
+
+            <h3>
+              تولید محتوای هوش مصنوعی
+            </h3>
+
+            <p>
+              تولید ایده، متن، کپشن و محتوای
+              حرفه‌ای برای برند شما با کمک
+              هوش مصنوعی.
+            </p>
+
+          </div>
+
+
+          <div class="service-card">
+
+            <div class="service-icon">
+              📱
+            </div>
+
+            <h3>
+              استراتژی اینستاگرام
+            </h3>
+
+            <p>
+              طراحی مسیر محتوایی برای رشد پیج،
+              افزایش تعامل و جذب مشتری.
+            </p>
+
+          </div>
+
+
+          <div class="service-card">
+
+            <div class="service-icon">
+              🎨
+            </div>
+
+            <h3>
+              طراحی هویت برند
+            </h3>
+
+            <p>
+              کمک به ساخت تصویر حرفه‌ای و
+              متفاوت برای برند شما در فضای دیجیتال.
+            </p>
+
+          </div>
+
+
+          <div class="service-card">
+
+            <div class="service-icon">
+              📈
+            </div>
+
+            <h3>
+              مشاوره رشد کسب‌وکار
+            </h3>
+
+            <p>
+              پیدا کردن ایده‌های بهتر برای جذب
+              مشتری و استفاده هوشمندانه از AI.
+            </p>
+
+          </div>
 
         </div>
 
       </div>
 
-    </div>
-
-  </section>
+    </section>
 
 
-  <!-- =========================
-       SERVICES
-  ========================== -->
+    <!-- WHY -->
 
-  <section id="services">
+    <section class="why">
 
-    <div class="container">
+      <div class="container">
 
-      <h2 class="section-title">
-        خدمات <span>AriyoAI</span> 🚀
-      </h2>
+        <h2 class="section-title">
+          چرا <span>AriyoAI</span>؟
+        </h2>
 
-      <p class="section-description">
-        با هوش مصنوعی، ایده‌های کسب‌وکار شما را
-        به محتوای حرفه‌ای و نتیجه‌محور تبدیل می‌کنیم.
-      </p>
-
-      <div class="services-grid">
-
-        <div class="service-card">
-
-          <div class="service-icon">
-            🤖
-          </div>
-
-          <h3>
-            تولید محتوای هوش مصنوعی
-          </h3>
-
-          <p>
-            تولید ایده، متن، کپشن و محتوای حرفه‌ای
-            برای برند شما با کمک هوش مصنوعی.
-          </p>
-
-        </div>
-
-
-        <div class="service-card">
-
-          <div class="service-icon">
-            📱
-          </div>
-
-          <h3>
-            استراتژی اینستاگرام
-          </h3>
-
-          <p>
-            طراحی مسیر محتوایی برای رشد پیج،
-            افزایش تعامل و جذب مشتری.
-          </p>
-
-        </div>
-
-
-        <div class="service-card">
-
-          <div class="service-icon">
-            🎨
-          </div>
-
-          <h3>
-            طراحی هویت برند
-          </h3>
-
-          <p>
-            کمک به ساخت تصویر حرفه‌ای و متفاوت
-            برای برند شما در فضای دیجیتال.
-          </p>
-
-        </div>
-
-
-        <div class="service-card">
-
-          <div class="service-icon">
-            📈
-          </div>
-
-          <h3>
-            مشاوره رشد کسب‌وکار
-          </h3>
-
-          <p>
-            پیدا کردن ایده‌های بهتر برای جذب مشتری
-            و استفاده هوشمندانه از AI.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       ABOUT
-  ========================== -->
-
-  <section id="about" class="about">
-
-    <div class="container">
-
-      <h2 class="section-title">
-        درباره <span>AriyoAI</span> 🌱
-      </h2>
-
-      <div class="about-box">
-
-        <h3>
-          هوش مصنوعی برای رشد واقعی
-        </h3>
-
-        <p>
-          AriyoAI با هدف کمک به کسب‌وکارها برای استفاده
-          ساده، خلاقانه و کاربردی از هوش مصنوعی شکل گرفته است.
+        <p class="section-subtitle">
+          هدف ما فقط تولید محتوا نیست؛
+          هدف، ساختن یک مسیر واقعی برای رشد است.
         </p>
 
-        <p>
-          ما فقط محتوا تولید نمی‌کنیم؛
-          بلکه تلاش می‌کنیم یک
-          <span class="about-highlight">
-            مسیر هوشمند برای رشد برند
-          </span>
-          ایجاد کنیم.
+        <div class="why-grid">
+
+          <div class="why-card">
+
+            <strong>01</strong>
+
+            <h3>
+              هوشمندانه
+            </h3>
+
+            <p>
+              از ابزارهای هوش مصنوعی برای
+              سریع‌تر و بهتر شدن فرآیند استفاده می‌کنیم.
+            </p>
+
+          </div>
+
+
+          <div class="why-card">
+
+            <strong>02</strong>
+
+            <h3>
+              خلاقانه
+            </h3>
+
+            <p>
+              برای هر برند، ایده و محتوای
+              متناسب با شخصیت آن طراحی می‌کنیم.
+            </p>
+
+          </div>
+
+
+          <div class="why-card">
+
+            <strong>03</strong>
+
+            <h3>
+              نتیجه‌محور
+            </h3>
+
+            <p>
+              محتوا را با هدف جذب مخاطب،
+              افزایش اعتماد و رشد کسب‌وکار می‌سازیم.
+            </p>
+
+          </div>
+
+
+          <div class="why-card">
+
+            <strong>04</strong>
+
+            <h3>
+              آینده‌نگر
+            </h3>
+
+            <p>
+              کسب‌وکار شما را برای دنیای جدید
+              و عصر هوش مصنوعی آماده می‌کنیم.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PORTFOLIO -->
+
+    <section id="portfolio">
+
+      <div class="container">
+
+        <h2 class="section-title">
+          نمونه‌کارهای <span>AriyoAI</span>
+        </h2>
+
+        <p class="section-subtitle">
+          بخشی از پروژه‌هایی که با ترکیب
+          خلاقیت، استراتژی و هوش مصنوعی ساخته می‌شوند.
         </p>
 
+        <div class="portfolio-grid">
+
+          <div class="portfolio-card">
+
+            <h3>
+              🌿 برند محصولات طبیعی
+            </h3>
+
+            <p>
+              استراتژی محتوا و هویت بصری
+              برای برند محصولات مراقبت از پوست.
+            </p>
+
+          </div>
+
+
+          <div class="portfolio-card">
+
+            <h3>
+              📱 رشد پیج اینستاگرام
+            </h3>
+
+            <p>
+              طراحی تقویم محتوایی،
+              ایده‌پردازی و تولید محتوای هدفمند.
+            </p>
+
+          </div>
+
+
+          <div class="portfolio-card">
+
+            <h3>
+              🤖 محتوای AI
+            </h3>
+
+            <p>
+              تبدیل ایده‌های خام به محتوای
+              حرفه‌ای با استفاده از هوش مصنوعی.
+            </p>
+
+          </div>
+
+        </div>
+
       </div>
 
-    </div>
-
-  </section>
+    </section>
 
 
-  <!-- =========================
-       PROCESS
-  ========================== -->
+    <!-- ABOUT -->
 
-  <section id="process">
+    <section id="about">
 
-    <div class="container">
+      <div class="container">
 
-      <h2 class="section-title">
-        مسیر <span>همکاری</span> ما 🤝
-      </h2>
+        <div class="about-box">
 
-      <p class="section-description">
-        ساده، سریع و حرفه‌ای؛ از ایده تا اجرا در کنار شما هستیم.
-      </p>
-
-      <div class="process-grid">
-
-        <div class="process-card">
-
-          <div class="process-number">
-            ۱
+          <div class="about-logo">
+            🌱
           </div>
 
-          <h3>
-            شناخت کسب‌وکار
-          </h3>
+          <h2>
+            درباره <span>AriyoAI</span>
+          </h2>
 
           <p>
-            ابتدا برند، هدف و مخاطبان شما را بررسی می‌کنیم.
-          </p>
-
-        </div>
-
-
-        <div class="process-card">
-
-          <div class="process-number">
-            ۲
-          </div>
-
-          <h3>
-            طراحی استراتژی
-          </h3>
-
-          <p>
-            بهترین مسیر استفاده از AI را برای شما مشخص می‌کنیم.
-          </p>
-
-        </div>
-
-
-        <div class="process-card">
-
-          <div class="process-number">
-            ۳
-          </div>
-
-          <h3>
-            تولید و اجرا
-          </h3>
-
-          <p>
-            ایده‌ها را به محتوای واقعی و حرفه‌ای تبدیل می‌کنیم.
-          </p>
-
-        </div>
-
-
-        <div class="process-card">
-
-          <div class="process-number">
-            ۴
-          </div>
-
-          <h3>
-            رشد و بهینه‌سازی
-          </h3>
-
-          <p>
-            نتایج را بررسی کرده و مسیر را بهتر و هوشمندتر می‌کنیم.
+            AriyoAI یک استودیو خلاق برای ترکیب
+            هوش مصنوعی، تولید محتوا و استراتژی
+            کسب‌وکار است.
+            <br><br>
+            ما باور داریم هوش مصنوعی قرار نیست
+            جای خلاقیت انسان را بگیرد؛
+            بلکه باید قدرت آن را چند برابر کند.
           </p>
 
         </div>
 
       </div>
 
-    </div>
-
-  </section>
+    </section>
 
 
-  <!-- =========================
-       CTA
-  ========================== -->
+    <!-- CTA -->
 
-  <section class="cta" id="contact">
+    <section class="cta" id="contact">
 
-    <div class="container">
-
-      <div class="cta-box">
+      <div class="container">
 
         <h2>
-          آماده‌ای کسب‌وکارت را
-          <span style="color:#9be52b;">
-            هوشمندتر
-          </span>
-          کنی؟ 🚀
+          آماده‌ای کسب‌وکارت را متحول کنی؟ 🚀
         </h2>
 
         <p>
-          اگر ایده‌ای داری یا می‌خواهی کسب‌وکارت را با
-          هوش مصنوعی رشد بدهی، از همین امروز شروع کنیم.
+          ایده‌ات را به ما بگو؛
+          با هم بررسی می‌کنیم که هوش مصنوعی
+          چطور می‌تواند به رشد آن کمک کند.
         </p>
 
-        <a
-          href="https://instagram.com/AriyoAI_Studio"
-          target="_blank"
-          class="btn btn-primary">
-          ارتباط با AriyoAI 💬
+        <a href="https://instagram.com/AriyoAI_Studio"
+           target="_blank"
+           class="cta-btn">
+          ارتباط با AriyoAI 📩
         </a>
 
       </div>
 
-    </div>
+    </section>
 
-  </section>
+  </main>
 
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
+  <!-- FOOTER -->
 
   <footer>
 
     <div class="container">
 
-      <div class="footer-logo">
-        🌱 Ariyo<span>AI</span>
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+
+          <h3>
+            🌱 Ariyo<span>AI</span>
+          </h3>
+
+          <p>
+            هوش مصنوعی برای رشد کسب‌وکارها.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h4>
+            دسترسی سریع
+          </h4>
+
+          <br>
+
+          <ul>
+
+            <li>
+              <a href="#home">
+                خانه
+              </a>
+            </li>
+
+            <li>
+              <a href="#services">
+                خدمات
+              </a>
+            </li>
+
+            <li>
+              <a href="#portfolio">
+                نمونه‌کارها
+              </a>
+            </li>
+
+            <li>
+              <a href="#about">
+                درباره ما
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <h4>
+            ارتباط
+          </h4>
+
+          <br>
+
+          <ul>
+
+            <li>
+              <a href="https://instagram.com/AriyoAI_Studio"
+                 target="_blank">
+                📷 Instagram
+              </a>
+            </li>
+
+            <li>
+              <a href="#contact">
+                📩 مشاوره
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
       </div>
 
-      <div class="social">
 
-        <a
-          href="https://instagram.com/AriyoAI_Studio"
-          target="_blank">
-          Instagram
-        </a>
+      <div class="copyright">
 
-        <a
-          href="https://github.com/AriyoAI"
-          target="_blank">
-          GitHub
-        </a>
+        © 2026 AriyoAI —
+        تمامی حقوق محفوظ است.
 
       </div>
-
-      <p>
-        © 2026 AriyoAI — همه حقوق محفوظ است.
-      </p>
-
-      <p>
-        ساخته شده با ایده، خلاقیت و هوش مصنوعی 🤖🌱
-      </p>
 
     </div>
 
